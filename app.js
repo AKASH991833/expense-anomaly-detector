@@ -127,7 +127,7 @@ function render(exp,mean,sd){
   charts.t=new Chart(document.getElementById('chTime'),{type:'bar',data:{labels:days.map(d=>new Date(d).toLocaleDateString('en-US',{day:'numeric',month:'short'})),datasets:[
     {label:'Daily spend',data:days.map(d=>Math.round(byDay[d])),backgroundColor:css('--accent'),borderRadius:4,maxBarThickness:22},
     {label:'Flagged',data:days.map(d=>flagDays[d]?Math.round(flagDays[d]):null),backgroundColor:'#dc2626',borderRadius:4,maxBarThickness:22}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:css('--ink-2'),boxWidth:12}}},scales:{x:{ticks:{color:css('--muted'),maxTicksLimit:10},grid:{display:false}},y:{ticks:{color:css('--muted'),callback:v=>'₹'+(v>=1000?(v/1000)+'k':v)},grid:{color:css('--border')}},stacked:{x:false,y:false}}}});
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:css('--ink-2'),boxWidth:12}}},scales:{x:{ticks:{color:css('--muted'),maxTicksLimit:10},grid:{display:false}},y:{ticks:{color:css('--muted'),callback:v=>'₹'+(v>=1000?(v/1000)+'k':v)},grid:{color:css('--border')}}}}});
   renderFlags();
 }
 function renderFlags(){
