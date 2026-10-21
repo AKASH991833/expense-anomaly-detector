@@ -1,5 +1,10 @@
 # Expense Anomaly Detector - Python (scikit-learn)
 
+> **Live browser demo:** https://akash991833.github.io/expense-anomaly-detector/ - zero-install version. The app in this folder is the pro-grade rebuild; run steps below.
+> **Repo:** https://github.com/AKASH991833/expense-anomaly-detector
+
+![expense-anomaly-detector in action](../screenshots/dashboard-light.png)
+
 The pro-grade version of the browser demo: real machine learning (IsolationForest) plus deterministic fraud rules, with a Streamlit UI.
 
 ## Stack
