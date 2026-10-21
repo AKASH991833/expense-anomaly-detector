@@ -39,3 +39,7 @@ python3 -m http.server 8080
 ## Tests
 
 `tests/run.mjs` (Puppeteer): verifies planted anomalies are caught (night hours, duplicates, bursts, outliers), sensitivity changes flag counts, band filter works, no console errors - desktop/mobile x light/dark.
+
+## Python version (scikit-learn + Streamlit)
+
+A pro-grade rebuild with real IsolationForest ML and a rule engine lives in [`python-app/`](python-app/) - see its README for run steps. The browser demo above stays the zero-install option.
